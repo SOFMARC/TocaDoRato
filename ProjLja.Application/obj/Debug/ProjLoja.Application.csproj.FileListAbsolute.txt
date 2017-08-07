@@ -1,0 +1,14 @@
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\ProjLja.Application.dll
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\ProjLja.Application.pdb
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\obj\Debug\ProjLoja.Application.csprojResolveAssemblyReference.cache
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\obj\Debug\ProjLja.Application.dll
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\obj\Debug\ProjLja.Application.pdb
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\ProjLja.Application.dll.config
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\EntityFramework.dll
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\System.Data.SQLite.dll
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\EntityFramework.xml
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projetos\Meus Projetos\SOFMARC\ProjLja.Application\bin\Debug\System.Data.SQLite.xml
