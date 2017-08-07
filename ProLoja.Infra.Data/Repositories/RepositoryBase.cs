@@ -22,6 +22,7 @@ namespace ProjLoja.Infra.Data.Repositories
             return Db.Set<TEntity>().Find(id);
         }
 
+
         public IEnumerable<TEntity> GetAll()
         {
             return Db.Set<TEntity>().ToList();
