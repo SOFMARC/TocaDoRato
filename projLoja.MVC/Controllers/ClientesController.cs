@@ -16,6 +16,7 @@ namespace projLoja.MVC.Controllers
         // GET: Clientes
         public ActionResult Index()
         {
+          
             var cliente = AutoMapperHelper.CreateMapper<IEnumerable<Cliente>, IEnumerable<ClienteViewModel>>(_clienteRepository.GetAll());
             return View(cliente);
         }

@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace ProLoja.Infra.Data.Repositories
 {
-    //public class ProdutoRepository : RepositoryBase<Produto>, IProdutoRepository
-    //{
-    //    public IEnumerable<Produto> BuscarPornome(string nome)
-    //    {
-    //        return Db.Produtos.Where(p => p.Nome == nome);
-    //    }
-    //}
+    public class ProdutoRepository : RepositoryBase<Produto>, IProdutoRepository
+    {
+        public IEnumerable<Produto> BuscarPornome(string nome)
+        {
+            return Db.Produtos.Where(p => p.Nome == nome);
+        }
+    }
 }
