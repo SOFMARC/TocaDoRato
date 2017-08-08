@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ProjLoja.Domain.Interfaces
 {
     public interface IProdutoRepository : IRepositoryBase<Produto>
-    {       
-    
+    {
+        IEnumerable<Produto> BuscarPornome(string nome);
     }
 }

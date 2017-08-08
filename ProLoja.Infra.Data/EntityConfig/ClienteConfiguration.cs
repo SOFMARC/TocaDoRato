@@ -12,17 +12,7 @@ namespace ProjLoja.Infra.Data.EntityConfig
     {
         public ClienteConfiguration()
         {
-            HasKey(c => c.Id);
-            Property(c => c.Nome)
-                .IsRequired()
-                .HasMaxLength(150);
-
-            Property(c => c.SobreNome)
-              .IsRequired()
-              .HasMaxLength(150);
-
-            Property(c => c.SobreNome)
-           .IsRequired();
+            HasKey(c => c.Id); 
    
         }
     }

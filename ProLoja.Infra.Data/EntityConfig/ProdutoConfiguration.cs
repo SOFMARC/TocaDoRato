@@ -13,12 +13,6 @@ namespace ProjLoja.Infra.Data.EntityConfig
         public ProdutoConfiguration()
         {
             HasKey(c => c.Id);
-            Property(c => c.Nome)
-                .IsRequired()
-                .HasMaxLength(250);
-
-            Property(c => c.Valor)
-                    .IsRequired();  
 
         }
     }
