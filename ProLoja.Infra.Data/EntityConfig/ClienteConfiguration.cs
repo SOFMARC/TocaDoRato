@@ -12,7 +12,7 @@ namespace ProjLoja.Infra.Data.EntityConfig
     {
         public ClienteConfiguration()
         {
-            HasKey(c => c.Id); 
+        
    
         }
     }

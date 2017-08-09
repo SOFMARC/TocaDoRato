@@ -12,8 +12,7 @@ namespace ProjLoja.Infra.Data.EntityConfig
     {
         public ProdutoConfiguration()
         {
-            HasKey(c => c.Id);
-
+          
         }
     }
 }

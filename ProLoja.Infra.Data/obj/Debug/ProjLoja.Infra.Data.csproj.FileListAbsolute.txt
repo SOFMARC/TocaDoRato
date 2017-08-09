@@ -12,7 +12,7 @@ C:\Projetos\Meus Projetos\SOFMARC\ProLoja.Infra.Data\bin\Debug\EntityFramework.x
 C:\Projetos\Meus Projetos\SOFMARC\ProLoja.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Projetos\Meus Projetos\SOFMARC\ProLoja.Infra.Data\bin\Debug\System.Data.SQLite.xml
 C:\Projetos\Meus Projetos\SOFMARC\ProLoja.Infra.Data\obj\Debug\ProjLoja.Infra.Data.csprojResolveAssemblyReference.cache
-C:\Projetos\Meus Projetos\SOFMARC\ProLoja.Infra.Data\obj\Debug\ProLoja.Infra.Data.dll
-C:\Projetos\Meus Projetos\SOFMARC\ProLoja.Infra.Data\obj\Debug\ProLoja.Infra.Data.pdb
 C:\Projetos\Meus Projetos\SOFMARC\ProLoja.Infra.Data\obj\Debug\ProjLoja.Infra.Data.Migrations.Initial.resources
 C:\Projetos\Meus Projetos\SOFMARC\ProLoja.Infra.Data\obj\Debug\ProjLoja.Infra.Data.csproj.GenerateResource.Cache
+C:\Projetos\Meus Projetos\SOFMARC\ProLoja.Infra.Data\obj\Debug\ProLoja.Infra.Data.dll
+C:\Projetos\Meus Projetos\SOFMARC\ProLoja.Infra.Data\obj\Debug\ProLoja.Infra.Data.pdb

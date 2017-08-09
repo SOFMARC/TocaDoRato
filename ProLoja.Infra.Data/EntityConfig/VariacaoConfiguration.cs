@@ -11,11 +11,8 @@ namespace ProjLoja.Infra.Data.EntityConfig
     public class VariacaoConfiguration : EntityTypeConfiguration<Variacao>
     {
         public VariacaoConfiguration()
-        {
-            HasKey(c => c.VariacaoId);
-            Property(c => c.Nome)
-                .IsRequired()
-                .HasMaxLength(250);         
+        {         
+     
 
         }
     }

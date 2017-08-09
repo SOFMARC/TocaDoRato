@@ -15,8 +15,7 @@ namespace projLoja.MVC.Controllers
         private readonly ClienteRepository _clienteRepository = new ClienteRepository();
         // GET: Clientes
         public ActionResult Index()
-        {
-          
+        {          
             var cliente = AutoMapperHelper.CreateMapper<IEnumerable<Cliente>, IEnumerable<ClienteViewModel>>(_clienteRepository.GetAll());
             return View(cliente);
         }
@@ -42,8 +41,8 @@ namespace projLoja.MVC.Controllers
             {
                 var clienteDoman = AutoMapperHelper.CreateMapper<ClienteViewModel, Cliente>(cliente);
                 _clienteRepository.Add(clienteDoman);
-                
-                return PartialView(_clienteRepository.GetAll());
+
+                return RedirectToAction("Index", "Clientes");
 
             }
             return View(cliente);

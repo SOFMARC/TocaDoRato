@@ -15,7 +15,6 @@ namespace ProjLoja.Infra.Data.Repositories
         {
             Db.Set<TEntity>().Add(obj);
             Db.SaveChanges();
-
         }
 
         public TEntity GetById(int id)
