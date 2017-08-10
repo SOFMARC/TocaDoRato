@@ -34,6 +34,7 @@
   <ItemGroup>
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Produto.cs" />
+    <Compile Include="Entities\Tipo.cs" />
     <Compile Include="Entities\Variacao.cs" />
     <Compile Include="Interfaces\IClienteRepository.cs" />
     <Compile Include="Interfaces\IProdutoRepository.cs" />

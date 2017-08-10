@@ -8,9 +8,15 @@ namespace ProjLoja.Domain.Entities
 {
     public class Variacao
     {
-        public int VariacaoId { get; set; }
+        public int Id { get; set; }
 
-        public string Nome { get; set; }        
+        public string Descricao { get; set; }
+
+        public bool Ativo { get; set; }
+
+        public int Tipo { get; set; }
+
+        public virtual ICollection<Autor> Autores { get; set; }
 
     }
 }

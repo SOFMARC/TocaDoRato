@@ -1,26 +1,22 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace projLoja.MVC.ViewModels
 {
-    [Table("Variacao")]
-    public class VariacaoViewModel
+    [Table("TipoProduto")]
+    public class TipoProdutoViewModel
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int VariacaoId { get; set; }
+        public int TipoId { get; set; }
 
         [Required()]
         [MaxLength(100)]
         public string Descricao { get; set; }
 
-        [Required()]
-        public bool Ativo { get; set; }
-
-        public int Tipo { get; set; }
-
-        public virtual IEnumerable<ProdutoViewModel> Produtos { get; set; }
-
+        [ForeignKey("TipoProdutoId")]
+        public ICollection<ProdutoViewModel> Produtos { get; set; }
     }
 }

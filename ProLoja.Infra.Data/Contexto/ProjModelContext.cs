@@ -22,6 +22,20 @@ namespace ProjLoja.Infra.Data.Contexto
 
         public DbSet<Variacao> Variacoes { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Produto>()
+                .HasMany<Variacao>(x => x.Variacoes)
+                .WithMany(x => x.Ativo)
+                .Map(x =>
+                {
+                    x.ToTable("ProdutoVariacao");
+                    x.MapLeftKey("AutorId");
+                    x.MapRightKey("LivroId");
+                });
+            base.OnModelCreating(modelBuilder);
+        }
+
         public override int SaveChanges()
         {
             foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null))
