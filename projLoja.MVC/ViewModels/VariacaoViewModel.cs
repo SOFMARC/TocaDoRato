@@ -7,8 +7,7 @@ namespace projLoja.MVC.ViewModels
     [Table("Variacao")]
     public class VariacaoViewModel
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]     
         public int VariacaoId { get; set; }
 
         [Required()]

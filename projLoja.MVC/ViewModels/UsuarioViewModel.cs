@@ -5,11 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace projLoja.MVC.ViewModels
 {
-    [Table("Cliente")]
-    public class UsuarioViewModel
+    [Table("Usuarios")]
+    public class ClienteViewModel
     {
-        [Key]
-        public int ClienteId { get; set; }
+        [Key]  
+        public int UsuarioId { get; set; }
 
         [Required(ErrorMessage = "Preencha o campo Nome")]
         [MaxLength(150, ErrorMessage = "Máximo {0} Caracteres")]
@@ -29,6 +29,14 @@ namespace projLoja.MVC.ViewModels
 
         [ScaffoldColumn(false)]
         public DateTime DataCadastro { get; set; }
+
+        [Required(ErrorMessage = "Preencha o campo Senha")]
+        [MaxLength(10, ErrorMessage = "Máximo {0} Caracteres")]
+        public string Senha { get; set; }
+
+        [Required(ErrorMessage = "Preencha o campo Login")]
+        [MaxLength(50, ErrorMessage = "Máximo {0} Caracteres")]
+        public string Login { get; set; }
 
         public bool Ativo { get; set; }
     }

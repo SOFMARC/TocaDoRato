@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace ProjLoja.Domain.Entities
 {
     public class Variacao
-    {
-        public int Id { get; set; }
+    {   
+        public int VariacaoId { get; set; }
 
         public string Descricao { get; set; }
 
@@ -16,7 +16,7 @@ namespace ProjLoja.Domain.Entities
 
         public int Tipo { get; set; }
 
-        public virtual ICollection<Autor> Autores { get; set; }
+        public virtual IEnumerable<Produto> Produtos { get; set; }
 
     }
 }
