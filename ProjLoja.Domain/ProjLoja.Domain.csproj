@@ -32,13 +32,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Entities\Produto - Copy.cs" />
+    <Compile Include="Entities\Servico.cs" />
+    <Compile Include="Entities\VendaItem.cs" />
+    <Compile Include="Entities\Venda.cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Caixa.cs" />
     <Compile Include="Entities\Produto.cs" />
     <Compile Include="Entities\TipoProduto.cs" />
     <Compile Include="Entities\Variacao.cs" />
+    <Compile Include="Interfaces\IUsuarioRepository.cs" />
+    <Compile Include="Interfaces\IVendaRepository.cs" />
+    <Compile Include="Interfaces\ICaixaRepository.cs" />
     <Compile Include="Interfaces\IClienteRepository.cs" />
     <Compile Include="Interfaces\IProdutoRepository.cs" />
     <Compile Include="Interfaces\IRepositoryBase.cs" />

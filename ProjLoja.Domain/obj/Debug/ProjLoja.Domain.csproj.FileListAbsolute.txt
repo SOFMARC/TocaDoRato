@@ -11,3 +11,4 @@ C:\Projetos\Meus Projetos\SOFMARC\ProjLoja.Domain\bin\Debug\EntityFramework.SqlS
 C:\Projetos\Meus Projetos\SOFMARC\ProjLoja.Domain\bin\Debug\System.Data.SQLite.xml
 C:\Projetos\Meus Projetos\SOFMARC\ProjLoja.Domain\obj\Debug\ProjLoja.Domain.dll
 C:\Projetos\Meus Projetos\SOFMARC\ProjLoja.Domain\obj\Debug\ProjLoja.Domain.pdb
+C:\Projetos\Meus Projetos\SOFMARC\ProjLoja.Domain\obj\Debug\ProjLoja.Domain.csprojResolveAssemblyReference.cache

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjLoja.Domain.Entities
 {
     public class Caixa
-    {
-        [Key]
+    {     
         public int CaixaId { get; set; }
 
         public int UsuarioId { get; set; }
