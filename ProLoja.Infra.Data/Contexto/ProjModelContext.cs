@@ -22,19 +22,11 @@ namespace ProjLoja.Infra.Data.Contexto
 
         public DbSet<Variacao> Variacoes { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Produto>()
-                .HasMany<Variacao>(x => x.Variacoes)
-                .WithMany(x => x.Ativo)
-                .Map(x =>
-                {
-                    x.ToTable("ProdutoVariacao");
-                    x.MapLeftKey("AutorId");
-                    x.MapRightKey("LivroId");
-                });
-            base.OnModelCreating(modelBuilder);
-        }
+        public DbSet<Venda> Venda { get; set; }
+
+        public DbSet<Usuario> Usuario { get; set; }
+
+        public DbSet<TipoProduto> TipoProduto { get; set; }
 
         public override int SaveChanges()
         {
@@ -47,6 +39,18 @@ namespace ProjLoja.Infra.Data.Contexto
                 if (entry.State == EntityState.Modified)
                 {
                     entry.Property("DataCadastro").IsModified = false;
+                }
+            }
+
+            foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("Data") != null))
+            {
+                if (entry.State == EntityState.Added)
+                {
+                    entry.Property("Data").CurrentValue = DateTime.Now;
+                }
+                if (entry.State == EntityState.Modified)
+                {
+                    entry.Property("Data").IsModified = false;
                 }
             }
             return base.SaveChanges();

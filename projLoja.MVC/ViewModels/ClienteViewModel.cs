@@ -3,10 +3,10 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace projLoja.MVC.ViewModels
+namespace ProjLoja.MVC.ViewModels
 {
     [Table("Cliente")]
-    public class UsuarioViewModel
+    public class ClienteViewModel
     {
         [Key]
         public int ClienteId { get; set; }
@@ -29,6 +29,8 @@ namespace projLoja.MVC.ViewModels
 
         [ScaffoldColumn(false)]
         public DateTime DataCadastro { get; set; }
+
+
 
         public bool Ativo { get; set; }
     }

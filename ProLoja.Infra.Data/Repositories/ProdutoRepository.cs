@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProLoja.Infra.Data.Repositories
+namespace ProjLoja.Infra.Data.Repositories
 {
     public class ProdutoRepository : RepositoryBase<Produto>, IProdutoRepository
     {
         public IEnumerable<Produto> BuscarPornome(string nome)
         {
-            return Db.Produtos.Where(p => p.Nome == nome);
+            return Db.Produtos.Where(p => p.Descricao == nome);
         }
     }
 }

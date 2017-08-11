@@ -3,10 +3,10 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace projLoja.MVC.ViewModels
+namespace ProjLoja.MVC.ViewModels
 {
     [Table("Usuarios")]
-    public class ClienteViewModel
+    public class UsuarioViewModel
     {
         [Key]  
         public int UsuarioId { get; set; }
@@ -30,14 +30,13 @@ namespace projLoja.MVC.ViewModels
         [ScaffoldColumn(false)]
         public DateTime DataCadastro { get; set; }
 
-        [Required(ErrorMessage = "Preencha o campo Senha")]
-        [MaxLength(10, ErrorMessage = "Máximo {0} Caracteres")]
-        public string Senha { get; set; }
-
-        [Required(ErrorMessage = "Preencha o campo Login")]
-        [MaxLength(50, ErrorMessage = "Máximo {0} Caracteres")]
-        public string Login { get; set; }
-
         public bool Ativo { get; set; }
+
+        [Display(Name = "Login")]
+        [Required(ErrorMessage = "Informe o nome do usuário", AllowEmptyStrings = false)]
+        public string Login { get; set; }
+        [Required(ErrorMessage = "Informe a senha do usuário", AllowEmptyStrings = false)]
+        [DataType(System.ComponentModel.DataAnnotations.DataType.Password)]
+        public string Senha { get; set; }
     }
 }

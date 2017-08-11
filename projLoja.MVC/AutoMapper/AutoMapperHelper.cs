@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace projLoja.MVC.AutoMapper
+namespace ProjLoja.MVC.AutoMapper
 {
     public static class AutoMapperHelper
     {

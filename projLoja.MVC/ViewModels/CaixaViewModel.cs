@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System;
 
-namespace projLoja.MVC.ViewModels
+namespace ProjLoja.MVC.ViewModels
 {
     [Table("Caixa")]
     public class CaixaViewModel

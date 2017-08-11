@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using ProLoja.Infra.Data.Repositories;
+using ProjLoja.Infra.Data.Repositories;
 using ProjLoja.Domain.Entities;
-using projLoja.MVC.AutoMapper;
-using projLoja.MVC.ViewModels;
+using ProjLoja.MVC.AutoMapper;
+using ProjLoja.MVC.ViewModels;
 
-namespace projLoja.MVC.Controllers
+namespace ProjLoja.MVC.Controllers
 {
     public class ClientesController : Controller
     {
