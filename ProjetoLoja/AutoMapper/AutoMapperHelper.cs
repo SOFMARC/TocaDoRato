@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace ProjetoLoja.MVC.AutoMapper
+namespace ProjetoLoja.AutoMapper
 {
     public static class AutoMapperHelper
     {

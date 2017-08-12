@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ProjLoja.MVC.ViewModels
+namespace ProjetoLoja.ViewModels
 {
     [Table("VendaItem")]
     public class VendaItemViewModel

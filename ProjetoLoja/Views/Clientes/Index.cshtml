@@ -1,4 +1,4 @@
-﻿@model IEnumerable<projLoja.MVC.ViewModels.ClienteViewModel>
+﻿@model IEnumerable<ProjetoLoja.ViewModels.ClienteViewModel>
 
 @{
     ViewBag.Title = "Index";
@@ -41,9 +41,9 @@
             @Html.DisplayFor(modelItem => item.Ativo)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Edit", "Edit", new { id=item.ClienteId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ClienteId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ClienteId })
         </td>
     </tr>
 }

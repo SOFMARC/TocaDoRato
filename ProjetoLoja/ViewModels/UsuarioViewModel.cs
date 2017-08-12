@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ProjLoja.MVC.ViewModels
+namespace ProjetoLoja.ViewModels
 {
     [Table("Usuarios")]
     public class UsuarioViewModel

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ProjLoja.MVC.ViewModels
+namespace ProjetoLoja.ViewModels
 {
     [Table("Venda")]
     public class VendaViewModel

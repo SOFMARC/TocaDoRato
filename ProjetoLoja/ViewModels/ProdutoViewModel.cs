@@ -3,13 +3,13 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ProjLoja.MVC.ViewModels
+namespace ProjetoLoja.ViewModels
 {
-    [Table("Servico")]
-    public class ServicoViewModel
-    {
+    [Table("Produto")]
+    public class ProdutoViewModel
+    { 
         [Key]
-        public int ServicoId { get; set; }
+        public int ProdutoId { get; set; }
 
         [Required(ErrorMessage = "Preencha o campo Nome")]
         [MaxLength(250, ErrorMessage = "Máximo {0} Caracteres")]
@@ -25,9 +25,15 @@ namespace ProjLoja.MVC.ViewModels
         [DataType(DataType.Currency)]
         [Range(typeof(decimal), "0", "99999999999999")]
         [Display(Name = "Desconto Ativo")]
-        public decimal DescontoAtivo { get; set; }  
+        public decimal DescontoAtivo { get; set; }
+
+        public virtual IEnumerable<VariacaoViewModel> Variacoes { get; set; }
 
         public bool Ativo { get; set; }
+
+        public int TipoProdutoId { get; set; }
+        [ForeignKey("TipoProdutoId")]
+        public virtual TipoProdutoViewModel TipoProduto { get; set; }
 
     }
 }

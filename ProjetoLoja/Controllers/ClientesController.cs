@@ -5,10 +5,10 @@ using System.Web;
 using System.Web.Mvc;
 using ProjLoja.Infra.Data.Repositories;
 using ProjLoja.Domain.Entities;
-using ProjetoLoja.MVC.AutoMapper;
-using ProjetoLoja.MVC.ViewModels;
+using ProjetoLoja.AutoMapper;
+using ProjetoLoja.ViewModels;
 
-namespace ProjetoLoja.MVC.Controllers
+namespace ProjetoLoja.Controllers
 {
     public class ClientesController : Controller
     {

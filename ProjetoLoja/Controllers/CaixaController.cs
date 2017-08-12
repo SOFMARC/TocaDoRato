@@ -5,9 +5,10 @@ using System.Web;
 using System.Web.Mvc;
 using ProjLoja.Infra.Data.Repositories;
 using ProjLoja.Domain.Entities;
-using ProjLoja.MVC.AutoMapper;
-using ProjLoja.MVC.ViewModels;
-namespace ProjetoLoja.MVC.Controllers
+using ProjetoLoja.AutoMapper;
+using ProjetoLoja.ViewModels;
+
+namespace ProjetoLoja.Controllers
 {    
     public class CaixaController : Controller
     {
