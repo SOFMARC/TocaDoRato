@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using ProLoja.Infra.Data.Repositories;
 using System.Web.Mvc;
-using ProjLoja.Infra.Data.Repositories;
-using ProjLoja.Domain.Entities;
-using ProjetoLoja.AutoMapper;
-using ProjetoLoja.ViewModels;
 
 namespace ProjetoLoja.Controllers
 {

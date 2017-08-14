@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProLoja.Infra.Data.Repositories
+namespace ProjetoLoja.Infra.Data.Repositories
 {
     public class CaixaRepository : RepositoryBase<Caixa>, ICaixaRepository
     {

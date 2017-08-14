@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using ProjLoja.Infra.Data.Repositories;
+using ProjetoLoja.Infra.Data.Repositories;
 using ProjLoja.Domain.Entities;
 using ProjetoLoja.AutoMapper;
 using ProjetoLoja.ViewModels;

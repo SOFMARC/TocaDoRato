@@ -1,4 +1,4 @@
-﻿@model Proj_Loja.Models.Usuario
+﻿@model ProjetoLoja.ViewModels.UsuarioViewModel
 @{
     ViewBag.Title = "Login";
 }
@@ -16,9 +16,9 @@
     }
     <table>
         <tr>
-            <td>@Html.LabelFor(a => a.NomeUsuario)</td>
-            <td>@Html.TextBoxFor(a => a.NomeUsuario)</td>
-            <td>@Html.ValidationMessageFor(a => a.NomeUsuario)</td>
+            <td>@Html.LabelFor(a => a.Login)</td>
+            <td>@Html.TextBoxFor(a => a.Login)</td>
+            <td>@Html.ValidationMessageFor(a => a.Login)</td>
         </tr>
         <tr>
             <td> @Html.LabelFor(a => a.Senha)</td>

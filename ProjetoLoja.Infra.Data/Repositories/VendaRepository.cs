@@ -1,4 +1,5 @@
-﻿using ProjLoja.Domain.Entities;
+﻿using ProjetoLoja.Infra.Data.Repositories;
+using ProjLoja.Domain.Entities;
 using ProjLoja.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
