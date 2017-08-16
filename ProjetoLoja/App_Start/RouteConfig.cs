@@ -14,22 +14,12 @@ namespace ProjetoLoja
         public static void RegisterRoutes(RouteCollection routes)
         {
             {
-                routes.MapRoute("ChromeRoute", "{*catchall}",
-                new { controller = "Home", action = "Index" },
-                new
-                {
-                    customConstraint = new UserAgentConstraint("Chrome")
-                },
-                new[] { "ProjetoLoja" });
-
-                routes.MapRoute("MyRoute", "{controller}/{action}/{id}/{*catchall}",
-                new
-                {
-                    controller = "Home",
-                    action = "Index",
-                    id = UrlParameter.Optional
-                },
-                new[] { "ProjetoLoja" });
+                routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+                routes.MapRoute(
+                    name: "Default",
+                    url: "{controller}/{action}/{id}",
+                    defaults: new { controller = "Home", action = "Login", id = UrlParameter.Optional }
+                );
             }
         }
     }

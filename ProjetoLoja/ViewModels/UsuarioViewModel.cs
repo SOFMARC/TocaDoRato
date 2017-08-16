@@ -11,17 +11,17 @@ namespace ProjetoLoja.ViewModels
         [Key]  
         public int UsuarioId { get; set; }
 
-        [Required(ErrorMessage = "Preencha o campo Nome")]
+    
         [MaxLength(150, ErrorMessage = "Máximo {0} Caracteres")]
         [MinLength(2, ErrorMessage = "Minimo de {0} Caracteres")]
         public string Nome { get; set; }
 
-        [Required(ErrorMessage = "Preencha o campo Nome")]
+   
         [MaxLength(150, ErrorMessage = "Máximo {0} Caracteres")]
         [MinLength(2, ErrorMessage = "Minimo de {0} Caracteres")]
         public string SobreNome { get; set; }
 
-        [Required(ErrorMessage = "Preencha o campo e-mail")]
+    
         [MaxLength(100, ErrorMessage = "Máximo {0} Caracteres")]
         [EmailAddress(ErrorMessage = "Preencha um email válido")]
         [DisplayName("E-mail")]
