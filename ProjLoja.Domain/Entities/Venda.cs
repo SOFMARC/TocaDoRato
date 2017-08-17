@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjLoja.Domain.Entities
 {
     public class Venda
     {
+        [Key]
         public int VendaId { get; set; }
 
         public decimal Valor { get; set; }

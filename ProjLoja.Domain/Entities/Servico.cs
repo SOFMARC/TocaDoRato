@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjLoja.Domain.Entities
 {
     public class Servico
     {
+        [Key]
         public int ServicoId { get; set; }
       
         public string Descricao { get; set; }
