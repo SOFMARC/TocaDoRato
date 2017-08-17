@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjLoja.Domain.Entities
 {
@@ -19,6 +20,7 @@ namespace ProjLoja.Domain.Entities
 
         public virtual IEnumerable<VendaItem> VendaItens { get; set; }
 
+        [Index("IX_VendaUsuarioId")]
         public int UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; }
     }

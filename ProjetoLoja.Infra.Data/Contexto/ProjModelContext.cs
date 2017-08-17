@@ -9,8 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using ProjetoLoja.Infra.Data.Migrations;
 using System.Data.SQLite;
-using System.Data.SQLite;
-using System.Linq;
 
 namespace ProjetoLoja.Infra.Data.Contexto
 {
@@ -29,9 +27,15 @@ namespace ProjetoLoja.Infra.Data.Contexto
 
         public DbSet<Venda> Venda { get; set; }
 
+        public DbSet<Caixa> Caixa { get; set; }
+
         public DbSet<Usuario> Usuario { get; set; }
 
         public DbSet<TipoProduto> TipoProduto { get; set; }
+
+        public DbSet<VendaItem> VendaItem { get; set; }
+
+        public DbSet<Servico> Servico { get; set; }
 
         public override int SaveChanges()
         {

@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
+using System.Linq;
+using System.Reflection;
 
 namespace ProjLoja.Domain.Entities
 {
@@ -9,6 +13,7 @@ namespace ProjLoja.Domain.Entities
         [Key]
         public int CaixaId { get; set; }
 
+        [Index("IX_CaixaUsuarioId")]
         public int UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; }
    
