@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjLoja.Domain.Entities
 {
    public class Cliente
     {
+        [Key]
         public int ClienteId { get; set; }
         public string Nome { get; set; }
         public string SobreNome { get; set; }

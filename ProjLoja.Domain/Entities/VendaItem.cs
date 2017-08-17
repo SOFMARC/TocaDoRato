@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjLoja.Domain.Entities
 {
     public class VendaItem
     {
+        [Key]
         public int VendaItemId { get; set; }
 
         public int FormaPagamento { get; set; }

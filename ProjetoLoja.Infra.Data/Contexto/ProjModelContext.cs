@@ -1,5 +1,5 @@
 ﻿using ProjLoja.Domain.Entities;
-using ProjetoLoja.Infra.Data.EntityConfig;
+//using ProjetoLoja.Infra.Data.EntityConfig;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,15 +7,20 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjetoLoja.Infra.Data.Migrations;
+using System.Data.SQLite;
+using System.Data.SQLite;
+using System.Linq;
 
 namespace ProjetoLoja.Infra.Data.Contexto
 {
     public class ProjModelContext : DbContext
     {
-        public ProjModelContext()
-            : base("ProjLojaLocal")
+        public ProjModelContext() : base("ProjLojaLocal")
         {
+            
         }
+
         public DbSet<Cliente> Cliente { get; set; }
 
         public DbSet<Produto> Produtos { get; set; }
@@ -56,5 +61,11 @@ namespace ProjetoLoja.Infra.Data.Contexto
             return base.SaveChanges();
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            //Database.SetInitializer(new SqliteContextInitializer<ProjModelContext>(_dbPath, modelBuilder));
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

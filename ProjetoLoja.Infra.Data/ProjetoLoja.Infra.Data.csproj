@@ -33,11 +33,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ExtCore.Data.EntityFramework.Sqlite, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -55,6 +55,10 @@
       <HintPath>..\packages\System.Data.SQLite.EF6.1.0.105.2\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Data.SQLite.EF6.Migrations, Version=1.0.104.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.Migrations.1.0.104\lib\System.Data.SQLite.EF6.Migrations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data.SQLite.Linq, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.Linq.1.0.105.2\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
       <Private>True</Private>
@@ -68,7 +72,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexto\ProjModelContext.cs" />
-    <Compile Include="EntityConfig\ClienteConfiguration.cs" />
+    <Compile Include="Migrations\201708171318494_Inicial.cs" />
+    <Compile Include="Migrations\201708171318494_Inicial.Designer.cs">
+      <DependentUpon>201708171318494_Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CaixaRepository.cs" />
     <Compile Include="Repositories\ClienteRepository.cs" />
@@ -78,7 +86,9 @@
     <Compile Include="Repositories\VendaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +96,14 @@
       <Project>{0a261666-56d2-4e42-9a8b-f317a7aef060}</Project>
       <Name>ProjLoja.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EntityConfig\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708171318494_Inicial.resx">
+      <DependentUpon>201708171318494_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.2\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net45\System.Data.SQLite.Core.targets')" />

@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjLoja.Domain.Entities
 {
     public class Produto
     {
     
+        [Key]
         public int ProdutoId { get; set; }
      
         public string Descricao { get; set; }
