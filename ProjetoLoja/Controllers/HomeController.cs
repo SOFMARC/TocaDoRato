@@ -16,7 +16,7 @@ namespace ProjetoLoja.Controllers
 
         public ActionResult Index()
         {
-            if (Session["usuarioLogadoID"] != null)
+            if (Session["UsuarioId"] != null)
             {
                 return View();
             }
