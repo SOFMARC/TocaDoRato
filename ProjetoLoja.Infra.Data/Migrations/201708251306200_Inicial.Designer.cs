@@ -13,7 +13,7 @@ namespace ProjetoLoja.Infra.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201708172155356_Inicial"; }
+            get { return "201708251306200_Inicial"; }
         }
         
         string IMigrationMetadata.Source

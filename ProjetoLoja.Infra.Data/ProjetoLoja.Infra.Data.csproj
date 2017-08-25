@@ -41,12 +41,8 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SQLitePCL.pretty, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SQLitePCL.pretty.1.1.0\lib\portable-net45+netcore45+wpa81+wp8\SQLitePCL.pretty.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
-      <HintPath>..\packages\SQLitePCLRaw.core.1.1.8\lib\net45\SQLitePCLRaw.core.dll</HintPath>
+    <Reference Include="SQLite.CodeFirst, Version=1.3.2.19, Culture=neutral, PublicKeyToken=eb96ba0a78d831a7, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.CodeFirst.1.3.2.19\lib\net45\SQLite.CodeFirst.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -77,9 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexto\ProjModelContext.cs" />
-    <Compile Include="Migrations\201708172155356_Inicial.cs" />
-    <Compile Include="Migrations\201708172155356_Inicial.Designer.cs">
-      <DependentUpon>201708172155356_Inicial.cs</DependentUpon>
+    <Compile Include="Migrations\201708251306200_Inicial.cs" />
+    <Compile Include="Migrations\201708251306200_Inicial.Designer.cs">
+      <DependentUpon>201708251306200_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -106,8 +102,8 @@
     <Folder Include="EntityConfig\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201708172155356_Inicial.resx">
-      <DependentUpon>201708172155356_Inicial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708251306200_Inicial.resx">
+      <DependentUpon>201708251306200_Inicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
